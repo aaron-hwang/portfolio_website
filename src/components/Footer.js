@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { motion } from 'framer-motion'
+
 import {
     PaddingContainer,
     Heading,
@@ -13,6 +15,8 @@ import { ContactForm,
         FormInput,    
 } from '../styles/Footer.styled'
 
+import { fadeInBottomVariant, fadeInTopVariant } from '../utils/Variants'
+
 const Footer = () => {
   return (
     <PaddingContainer 
@@ -23,7 +27,10 @@ const Footer = () => {
     >
 
         <Heading 
-            as="h4"
+            as={motion.h4}
+            variants={fadeInTopVariant}
+            initial="hidden"
+            whileInView="visible"
             size="h4"
             align="center"
         >
@@ -31,7 +38,10 @@ const Footer = () => {
         </Heading>
 
         <Heading
-            as="h2"
+            as={motion.h2}
+            variants={fadeInTopVariant}
+            initial="hidden"
+            whileInView="visible"
             size="h2"
             align="center"
             top="0.5rem"
@@ -40,9 +50,16 @@ const Footer = () => {
         </Heading>
 
         <PaddingContainer top="3rem">
-            <FlexContainer justify="center">
-                <ContactForm>
-                    <PaddingContainer bottom="2rem">
+            <FlexContainer justify="center" >
+                <ContactForm
+                    as={motion.form}
+                    variants={fadeInBottomVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                >
+                    <PaddingContainer 
+                        bottom="2rem"
+                    >
                         <FormLabel>
                             Name:
                         </FormLabel>
@@ -52,7 +69,9 @@ const Footer = () => {
                         />
                     </PaddingContainer>
 
-                    <PaddingContainer bottom="2rem">
+                    <PaddingContainer
+                        bottom="2rem"
+                    >
                         <FormLabel>
                             Email:
                         </FormLabel>
@@ -62,7 +81,9 @@ const Footer = () => {
                         />
                     </PaddingContainer>
 
-                    <PaddingContainer bottom="2rem">
+                    <PaddingContainer
+                        bottom="2rem"
+                    >
                         <FormLabel>
                             Message:
                         </FormLabel>
@@ -72,7 +93,10 @@ const Footer = () => {
                         />
                     </PaddingContainer>
 
-                    <FlexContainer justify="center">
+                    <FlexContainer
+                        justify="center" 
+                        responsiveFlex
+                    >
                         <Button> Send Message </Button>
                     </FlexContainer>
                 </ContactForm>
