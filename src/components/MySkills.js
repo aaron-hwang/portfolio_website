@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 import {
     FlexContainer, 
@@ -16,15 +17,29 @@ import {
 
 import { Skils } from '../utils/Data';
 
+import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants';
+
 const MySkills = () => {
   return (
     <PaddingContainer
         id="Skills"
         top="10%"
         bottom="10%"
+        responsiveLeft="1rem"
+        responsiveRight="1rem"
+
     >
-        <FlexContainer fullWidthChild>
-            <SkillsCardContainer>
+        <FlexContainer 
+            responsiveFlex 
+            fullWidthChild
+            responsiveDirection="column-reverse"
+        >
+            <SkillsCardContainer
+                as={motion.div}
+                variants={fadeInLeftVariant}
+                initial="hidden"
+                whileInView="visible"
+            >
                 {Skils.map((skill) => (
                     <SkillsCard>
                         <IconContainer size="5rem" color ="blue">
@@ -38,7 +53,11 @@ const MySkills = () => {
                 ))}
             </SkillsCardContainer>
 
-            <div>
+            <motion.div
+                variants={fadeInRightVariant}
+                initial="hidden"
+                whileInView="visible"
+            >
                 <Heading as="h4" size="h4">
                     My Skills
                 </Heading>
@@ -54,7 +73,7 @@ const MySkills = () => {
                 <ParaText>
                     This is sample text
                 </ParaText>
-            </div>
+            </motion.div>
 
         </FlexContainer>
 
