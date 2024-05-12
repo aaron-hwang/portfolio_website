@@ -46,7 +46,7 @@ export const projectDetails = [
         tech_stack: ['Golang', 'React JS'],
         project_img: hsr_logo,
         project_url: "https://github.com/simimpact/srsim",
-        reverse: false,
+        reverse: true,
     },
     {
         id: 1,
@@ -57,4 +57,27 @@ export const projectDetails = [
         project_url: "https://github.com/aaron-hwang/Bullet-Journal",
         reverse: false,
     },
+]
+
+export const navLinks = [
+    {
+        id:0,
+        name: "Home",
+        href: "Home",
+    },
+    {
+        id:1,
+        name: "My Skills",
+        href: "Skills",
+    },
+    {
+        id:3,
+        name: "Projects",
+        href: "Projects",
+    },
+    {
+        id:4,
+        name: "My Contact",
+        href: "Contact",
+    }
 ]
