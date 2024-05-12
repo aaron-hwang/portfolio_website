@@ -10,12 +10,13 @@ import { MenuIcon, NavMenuContainer, MenuItem
  } from '../../styles/Navbar.styled'
 
 import { AiOutlineClose } from 'react-icons/ai'
+import { navLinks } from '../../utils/Data'
 
 const NavMenu = ({ setOpenMenu }) => {
   return (
     <NavMenuContainer>
         <PaddingContainer left="5%" right="5%" top="2rem">
-            <FlexContainer justify="flex-end">
+            <FlexContainer justify="flex-end" responsiveFlex>
                 <MenuIcon
                     onClick={() => setOpenMenu(false)}
                 >
@@ -28,10 +29,18 @@ const NavMenu = ({ setOpenMenu }) => {
             <FlexContainer
                 direction="column"
                 align="center"
+                responsiveFlex
             >
-                <MenuItem>
-                Home    
-                </MenuItem>
+                {navLinks.map((link) => (
+                    <MenuItem
+                        key={link.id} 
+                        href={`#${link.href}`}
+                        onClick={() => setOpenMenu(false)}
+                    >
+                        {link.name}    
+                    </MenuItem>
+                ))}
+
             </FlexContainer>
         </PaddingContainer>
     </NavMenuContainer>
