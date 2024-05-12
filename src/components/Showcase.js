@@ -18,7 +18,7 @@ import {
 
 import { BsLinkedin, BsYoutube, BsInstagram, BsTwitterX } from "react-icons/bs";
 
-import ShowcaseImg from '../assets/Bronseele.jpeg';
+import ShowcaseImg from '../assets/emptyprofile.png';
 import BackgroundImg from '../assets/particle.png';
 
 import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants';
@@ -51,7 +51,7 @@ const Showcase = () => {
                     bottom="1rem"
                 >
 
-                    I'm <BlueText>Amelia</BlueText>
+                    I'm <BlueText>Aaron</BlueText>
 
                 </Heading>
 
@@ -60,7 +60,7 @@ const Showcase = () => {
                 </Heading>
 
                 <ParaText as="p" top="2rem" bottom="4rem">
-                    Hello, my name is Amelia Huang and I'm a Rising Junior CS student at XXX University. 
+                    Hello, my name is Aaron Huang and I'm a Rising Junior CS student at Northeastern University. 
                 </ParaText>
                 {/* --Social icons-- */}
                 <FlexContainer gap="50px"

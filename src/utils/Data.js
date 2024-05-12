@@ -46,7 +46,7 @@ export const projectDetails = [
         tech_stack: ['Golang', 'React JS'],
         project_img: hsr_logo,
         project_url: "https://github.com/simimpact/srsim",
-        reverse: true,
+        reverse: false,
     },
     {
         id: 1,

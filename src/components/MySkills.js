@@ -67,11 +67,11 @@ const MySkills = () => {
                 </Heading>
 
                 <ParaText top="2rem" bottom="1.5rem">
-                    I have a wide breadth of experience in mny different technologies. 
+                    I have a wide breadth of experience in many different technologies. 
                 </ParaText> 
 
                 <ParaText>
-                    This is sample text
+                    I have a passion for all things technology, and am particularly experienced with Object Oriented programming. 
                 </ParaText>
             </motion.div>
 
