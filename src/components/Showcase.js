@@ -16,7 +16,7 @@ import {
     Particle,
 } from '../styles/Showcase.styled';
 
-import { BsLinkedin, BsYoutube, BsInstagram, BsTwitterX, BsGithub } from "react-icons/bs";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 import ShowcaseImg from '../assets/emptyprofile.png';
 import BackgroundImg from '../assets/particle.png';
