@@ -16,7 +16,7 @@ import {
     Particle,
 } from '../styles/Showcase.styled';
 
-import { BsLinkedin, BsYoutube, BsInstagram, BsTwitterX } from "react-icons/bs";
+import { BsLinkedin, BsYoutube, BsInstagram, BsTwitterX, BsGithub } from "react-icons/bs";
 
 import ShowcaseImg from '../assets/emptyprofile.png';
 import BackgroundImg from '../assets/particle.png';
@@ -66,21 +66,14 @@ const Showcase = () => {
                 <FlexContainer gap="50px"
                     responsiveFlex
                 >
-                    <IconContainer color="blue" size="1.5rem">
+                    <IconContainer color="blue" size="1.5rem" onClick={() => window.open("https://www.linkedin.com/in/aaron-huang-a19074238/")}>
                         <BsLinkedin />
                     </IconContainer>
 
-                    <IconContainer color="blue" size="1.5rem">
-                        <BsTwitterX />
+                    <IconContainer color="blue" size="1.5rem" onClick={() => window.open("https://github.com/aaron-hwang")}>
+                        <BsGithub></BsGithub>
                     </IconContainer>
 
-                    <IconContainer color="blue" size="1.5rem">
-                        <BsYoutube />
-                    </IconContainer>
-
-                    <IconContainer color="blue" size="1.5rem">
-                        <BsInstagram />
-                    </IconContainer>
                 </FlexContainer>
             </motion.div>
 

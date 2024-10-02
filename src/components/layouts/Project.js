@@ -55,7 +55,7 @@ const Project = ({ data }) => {
                 {data.project_description}
             </ParaText>
 
-            <Button> Visit Website</Button>
+            <Button onClick={() => window.open(data.project_url)}> Visit Website</Button>
         </motion.div>
 
         {/* --right section project image-- */}

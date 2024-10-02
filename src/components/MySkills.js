@@ -71,7 +71,7 @@ const MySkills = () => {
                 </ParaText> 
 
                 <ParaText>
-                    I have a passion for all things technology, and am particularly experienced with Object Oriented programming. 
+                    I am particularly passionate about Systems programming and Robotics, 
                 </ParaText>
             </motion.div>
 
